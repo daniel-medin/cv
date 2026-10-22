@@ -30,6 +30,8 @@ Open <http://127.0.0.1:4173/>. There is no build step or dependency installation
 
 The work filter has four stops: All work, Professional, Hobby, and Audio. All work shows the selected project cards and a collapsed audio register. Audio opens the full register. Without JavaScript, the project cards and expanded register are visible. Each featured project card has one category.
 
+Each stop has a shareable link: `#work`, `#professional`, `#hobby`, or `#audio`. Opening one selects the matching filter; changing the filter updates the URL. Links to audio years such as `#audio-2024` also select Audio. Other section links such as `#contact` keep their normal behavior.
+
 ## Audio project register
 
 The Audio register contains 250 names from Daniel's preliminary project-folder inventory, grouped by the source's year sections (2026, 2025, 2024, 2023, and 2021) and alphabetized within each year. The source was an automatic first pass and may still contain closely related or duplicate projects. Asterisks marking backup-based years were removed; the page notes that these may reflect the earliest backup rather than the production date. The folder note on “Zinzino – Why” was removed, and “Sample (okänt projekt)” was omitted because it did not identify a project. No roles, outcomes, or production types were invented. Treat this as a working register until the names and years can be checked against the actual work.

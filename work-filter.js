@@ -5,6 +5,13 @@ const projects = [...document.querySelectorAll('.work .project')];
 const audioRegister = document.querySelector('#audio-register');
 const audioEntryCount = audioRegister?.querySelectorAll('.audio-project-list li').length ?? 0;
 const status = document.querySelector('#filter-status');
+const categoryHashes = ['work', 'professional', 'hobby', 'audio'];
+
+function categoryFromHash() {
+  const hash = window.location.hash.slice(1);
+  if (hash.startsWith('audio-') && document.getElementById(hash)) return 3;
+  return categoryHashes.indexOf(hash);
+}
 
 function showCategory(index) {
   const button = buttons[index];
@@ -36,9 +43,20 @@ function showCategory(index) {
       : `Showing ${visibleCount} projects: ${label}.`;
 }
 
+function navigateToCategory(index) {
+  showCategory(index);
+  window.location.hash = categoryHashes[index];
+}
+
 slider.addEventListener('input', () => showCategory(Number(slider.value)));
+slider.addEventListener('change', () => navigateToCategory(Number(slider.value)));
 buttons.forEach((button, index) => {
-  button.addEventListener('click', () => showCategory(index));
+  button.addEventListener('click', () => navigateToCategory(index));
 });
 
-showCategory(0);
+window.addEventListener('hashchange', () => {
+  const index = categoryFromHash();
+  if (index !== -1) showCategory(index);
+});
+
+showCategory(Math.max(0, categoryFromHash()));

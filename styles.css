@@ -59,6 +59,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .section-heading span { color: var(--muted); font-size: 13px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
+.filter-anchor { display: block; height: 0; }
 .work-filter { margin-top: -15px; --route-progress: 0%; }
 .filter-track { position: relative; height: 31px; }
 .filter-track::before, .filter-track::after { content: ''; position: absolute; top: 14px; left: 12.5%; height: 2px; }
