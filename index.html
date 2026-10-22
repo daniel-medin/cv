@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daniel Medin — sound designer, project manager and web developer. Experience and selected websites.">
+  <title>Daniel Medin — Sound, Projects &amp; Web</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="work-filter.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Daniel Medin, back to top">Daniel Medin</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">Daniel<br>Medin<span class="period">.</span></h1>
+        <div class="intro-bottom">
+          <p>I make sound and software.</p>
+          <a class="text-link" href="#work">Selected work <span aria-hidden="true">↘</span></a>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="work-filter" aria-label="Filter projects">
+          <div class="filter-track">
+            <div class="filter-stations" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <input id="work-filter" type="range" min="0" max="3" step="1" value="0" aria-label="Filter projects" aria-valuetext="All work">
+          </div>
+          <div class="filter-labels" role="group" aria-label="Work categories">
+            <button type="button" data-filter="all" aria-pressed="true">All work</button>
+            <button type="button" data-filter="professional" aria-pressed="false">Professional</button>
+            <button type="button" data-filter="hobby" aria-pressed="false">Hobby</button>
+            <button type="button" data-filter="audio" aria-pressed="false">Audio</button>
+          </div>
+        </div>
+        <p class="visually-hidden" id="filter-status" role="status" aria-live="polite"></p>
+        <div class="section-heading">
+          <h2 id="work-title">Selected work</h2>
+        </div>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>aVenue</h3>
+            <p class="project-summary">A booking platform for rooms, events and shared spaces.</p>
+            <p class="project-detail">The public demo lets visitors explore available rooms and start a booking. The system also supports calendars, administration and reporting.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core MVC, Entity Framework Core, SQL Server, FullCalendar</p>
+            <a class="text-link" href="https://avenue.lokalbokning.se/" target="_blank" rel="noopener noreferrer">Explore demo <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://avenue.lokalbokning.se/" target="_blank" rel="noopener noreferrer" aria-label="Explore the aVenue demo">
+            <img src="assets/avenue.png" width="1440" height="900" loading="lazy" alt="Screenshot of the aVenue demo showing rooms available for booking">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>BitStore</h3>
+            <p class="project-summary">A small bucket API for sharing values between apps, scripts and devices.</p>
+            <p class="project-detail">Create buckets, manage write keys, and read or write values through documented endpoints. A tutorial and demo help developers get started.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> ASP.NET Core, JavaScript, REST API</p>
+            <a class="text-link" href="https://bitstore.mrcheng.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://bitstore.mrcheng.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the BitStore website">
+            <img src="assets/bitstore.png" width="1440" height="900" loading="lazy" alt="Screenshot of the BitStore homepage showing its bucket API introduction and quick start">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Chrome Fact Check</h3>
+            <p class="project-summary">A browser extension for checking selected text without leaving the page.</p>
+            <p class="project-detail">It shows a short in-page summary and opens a fuller report on request. A configurable backend handles the analysis.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> Chrome Manifest V3, JavaScript, ASP.NET Core</p>
+            <a class="text-link" href="https://chromewebstore.google.com/detail/chrome-fact-check/indnkfihnnflmakhihapclnjiabdnnai" target="_blank" rel="noopener noreferrer">View extension <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://chromewebstore.google.com/detail/chrome-fact-check/indnkfihnnflmakhihapclnjiabdnnai" target="_blank" rel="noopener noreferrer" aria-label="View Chrome Fact Check in the Chrome Web Store">
+            <img src="assets/chrome-fact-check.png" width="1280" height="800" loading="lazy" alt="Chrome Web Store screenshot showing a fact-check summary popover over selected text">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Codex Account Switcher</h3>
+            <p class="project-summary">A Windows app for switching between saved Codex accounts.</p>
+            <p class="project-detail">It stores account credentials for the current Windows user and refreshes Codex in detected VS Code windows while keeping local sessions, skills and settings in place.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> C#, .NET 10, WPF, Windows DPAPI</p>
+            <a class="text-link" href="https://github.com/daniel-medin/codex-account-switcher" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://github.com/daniel-medin/codex-account-switcher" target="_blank" rel="noopener noreferrer" aria-label="View Codex Account Switcher on GitHub">
+            <img src="assets/codex-account-switcher.png" width="975" height="250" loading="lazy" alt="Cropped screenshot of Codex Account Switcher in an isolated test, showing its account controls">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Daisy Drums / Kicki Danielsson</h3>
+            <p class="project-summary">A bass drum synthesizer for Daisy Seed hardware, with a playable browser preview.</p>
+            <p class="project-detail">Shape the drum sound with envelope, pitch, filter and distortion controls in the preview; the hardware version runs as C++ firmware.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> JavaScript, C++, libDaisy, DaisySP</p>
+            <a class="text-link" href="https://mrcheng.github.io/Daisy/preview/kicki/" target="_blank" rel="noopener noreferrer">Try preview <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://mrcheng.github.io/Daisy/preview/kicki/" target="_blank" rel="noopener noreferrer" aria-label="Try the Kicki Danielsson browser preview">
+            <img src="assets/daisy-kicki.png" width="1440" height="900" loading="lazy" alt="Screenshot of the Kicki Danielsson browser synthesizer with sound controls and a drum pad">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>DAWG</h3>
+            <p class="project-summary">A video-first desktop app for sound design.</p>
+            <p class="project-detail">Sound is attached to nodes in the picture rather than ordinary audio tracks, with playback tied to movement on screen.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> C++, Qt 6 Quick, JUCE, FFmpeg, OpenCV</p>
+            <a class="text-link" href="https://github.com/daniel-medin/dawg" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image project-image--art" href="https://github.com/daniel-medin/dawg" target="_blank" rel="noopener noreferrer" aria-label="View the DAWG project on GitHub">
+            <img src="assets/dawg-logo.png" width="958" height="415" loading="lazy" alt="DAWG logo with a dog wearing headphones beside a soundwave wordmark">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Disc Golf Champions</h3>
+            <p class="project-summary">An online disc golf game played in the browser.</p>
+            <p class="project-detail">Play solo or join a room with other players. Throws respond to disc choice, power, angle, terrain and wind, with live turns and chat in multiplayer games.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> ASP.NET Core, SignalR, Three.js, MariaDB</p>
+            <a class="text-link" href="https://discgolfchampions.mrcheng.se/" target="_blank" rel="noopener noreferrer">Play game <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://discgolfchampions.mrcheng.se/" target="_blank" rel="noopener noreferrer" aria-label="Play Disc Golf Champions">
+            <img src="assets/discgolfchampions.png" width="1440" height="900" loading="lazy" alt="Screenshot of the Disc Golf Champions browser game's illustrated start screen">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Fat Check</h3>
+            <p class="project-summary">A compact calorie tracker designed to feel at home on a phone.</p>
+            <p class="project-detail">Log daily intake, review the week in a chart, and set goals for intake and burn rate. A BitStore bucket can sync data when configured in the browser.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> HTML, CSS, JavaScript, Chart.js, BitStore API</p>
+            <a class="text-link" href="https://fatcheck.mrcheng.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image project-image--portrait" href="https://fatcheck.mrcheng.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Fat Check website">
+            <img src="assets/fatcheck.png" width="460" height="952" loading="lazy" alt="Screenshot of the Fat Check calorie tracker showing a weekly chart and the calorie entry form">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Home Assistant: Shoppingtajm</h3>
+            <p class="project-summary">Shopping lists in Home Assistant.</p>
+            <p class="project-detail">The integration exposes list sensors and actions, reacts to new items, and includes a dashboard card for managing grocery lists.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> Python, Home Assistant, JavaScript, Shoppingtajm API</p>
+            <a class="text-link" href="https://github.com/daniel-medin/home-assistant-shoppingtajm" target="_blank" rel="noopener noreferrer">View integration <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image project-image--art" href="https://github.com/daniel-medin/home-assistant-shoppingtajm" target="_blank" rel="noopener noreferrer" aria-label="View the Shoppingtajm Home Assistant integration on GitHub">
+            <img src="assets/home-assistant-shoppingtajm.png" width="693" height="197" loading="lazy" alt="Shoppingtajm logo included with its Home Assistant integration">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Home Assistant: Skickamejl</h3>
+            <p class="project-summary">Email notifications and delivery status in Home Assistant.</p>
+            <p class="project-detail">Send mail from automations, react to delivery events through a webhook, and review server status and message history in a dashboard card.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> Python, Home Assistant, JavaScript, Skickamejl API</p>
+            <a class="text-link" href="https://github.com/MRCCollective/home-assistant-skickamejl" target="_blank" rel="noopener noreferrer">View integration <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image project-image--art" href="https://github.com/MRCCollective/home-assistant-skickamejl" target="_blank" rel="noopener noreferrer" aria-label="View the Skickamejl Home Assistant integration on GitHub">
+            <img src="assets/home-assistant-skickamejl.png" width="1869" height="403" loading="lazy" alt="Skickamejl logo included with its Home Assistant integration">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>KEKS-tools</h3>
+            <p class="project-summary">An online toolbox for developing youth work.</p>
+            <p class="project-detail">Guided reflection and assessment help youth workers discuss quality, competencies and learning, save notes, and revisit their progress.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET, Bootstrap, jQuery</p>
+            <a class="text-link" href="https://keks-tools.eu/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://keks-tools.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the KEKS-tools website">
+            <img src="assets/keks-tools.png" width="1440" height="900" loading="lazy" alt="Screenshot of the KEKS-tools homepage with its youth work reflection tools">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>Lokalbokning</h3>
+            <p class="project-summary">A website introducing aVenue, a booking system for venues and community spaces.</p>
+            <p class="project-detail">It explains how the service helps youth centres, cultural venues and other organisations spend less time on administration, with a path to try the demo.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> HTML, CSS, JavaScript, PHP</p>
+            <a class="text-link" href="https://lokalbokning.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://lokalbokning.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Lokalbokning website">
+            <img src="assets/lokalbokning.png" width="1440" height="900" loading="lazy" alt="Screenshot of Lokalbokning's homepage introducing the aVenue booking system">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>Malmö Fritid</h3>
+            <p class="project-summary">A staff portal for Malmö's youth centres.</p>
+            <p class="project-detail">Staff record attendance, plan activities and excursions, manage guardian consent, and review reports. The portal requires staff sign-in.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core MVC, EF Core, SQL Server, Hangfire</p>
+            <a class="text-link" href="https://fritid.malmo.se/" target="_blank" rel="noopener noreferrer">Open portal <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://fritid.malmo.se/" target="_blank" rel="noopener noreferrer" aria-label="Open the Malmö Fritid staff portal">
+            <img src="assets/malmo-fritid-laptop.png" width="1586" height="992" loading="lazy" alt="Illustrative youth centre scene with Daniel's Malmö Fritid dashboard screenshot on a laptop">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>Oddcoll</h3>
+            <p class="project-summary">A platform for managing international business debt collection.</p>
+            <p class="project-detail">Clients submit cases, while the application supports the work between clients, local collection agents and operators. The main platform requires sign-in.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core MVC, EF Core, SQL Server, Bootstrap</p>
+            <a class="text-link" href="https://oddcoll.com/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://oddcoll.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Oddcoll website">
+            <img src="assets/oddcoll.png" width="1440" height="900" loading="lazy" alt="Screenshot of the Oddcoll homepage introducing its international debt collection service">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Shoppingtajm</h3>
+            <p class="project-summary">Shared shopping lists that can be organised around the stores you use.</p>
+            <p class="project-detail">Share lists, costs and to-dos, save favourite items and scan barcodes. Real-time updates keep a household's lists in sync.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> ASP.NET Core, Vue 3, SignalR, MariaDB</p>
+            <a class="text-link" href="https://shoppingtajm.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://shoppingtajm.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Shoppingtajm website">
+            <img src="assets/shoppingtajm.png" width="1440" height="900" loading="lazy" alt="Screenshot of the Shoppingtajm homepage presenting shared shopping lists">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>Skickamejl</h3>
+            <p class="project-summary">A Swedish API for sending transactional email.</p>
+            <p class="project-detail">Send receipts, sign-in codes and notifications, then follow each message through delivery logs. The service also offers reusable templates and a .NET SDK.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core Razor Pages, EF Core, SQL Server, Hangfire</p>
+            <a class="text-link" href="https://skickamejl.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://skickamejl.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Skickamejl website">
+            <img src="assets/skickamejl.png" width="1440" height="900" loading="lazy" alt="Screenshot of the Skickamejl homepage introducing its Swedish transactional email API">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Slack Bridge</h3>
+            <p class="project-summary">An event delivery service that turns application data into clear Slack notifications.</p>
+            <p class="project-detail">Teams define reusable message templates, send events through an API, and inspect delivery logs or retry failed sends.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> ASP.NET Core, Bootstrap, Scriban templates, JSON API</p>
+            <a class="text-link" href="https://slackbridge.mrcheng.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://slackbridge.mrcheng.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Slack Bridge website">
+            <img src="assets/slackbridge.png" width="1440" height="900" alt="Screenshot of the Slack Bridge homepage showing its event API introduction and feature overview">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>SnickSnack</h3>
+            <p class="project-summary">Private voice, video and text conversations in a browser room.</p>
+            <p class="project-detail">Create or join a room, then talk directly with other participants over peer-to-peer audio and video, with room text chat alongside.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> WebRTC, WebSocket, SignalR, ASP.NET Core</p>
+            <a class="text-link" href="https://snicksnack.mrcheng.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://snicksnack.mrcheng.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the SnickSnack website">
+            <img src="assets/snicksnack.png" width="1440" height="900" loading="lazy" alt="Screenshot of the SnickSnack homepage with controls to create or join a conversation room">
+          </a>
+        </article>
+
+        <article class="project" data-category="hobby">
+          <div class="project-copy">
+            <h3>Strippr</h3>
+            <p class="project-summary">A local-first editor for tightening spoken video.</p>
+            <p class="project-detail">Find silence, adjust or compress pauses against a waveform, and render the result locally with FFmpeg. Experimental AI helpers are optional.</p>
+            <p class="technology"><span class="project-tag">Hobby</span><strong>Built with</strong> ASP.NET Core Razor Pages, Web Audio API, FFmpeg</p>
+            <a class="text-link" href="https://github.com/daniel-medin/Strippr" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image project-image--art" href="https://github.com/daniel-medin/Strippr" target="_blank" rel="noopener noreferrer" aria-label="View the Strippr project on GitHub">
+            <img src="assets/strippr-logo.png" width="669" height="727" loading="lazy" alt="Strippr project artwork with a film reel and scissors">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>SummitHub</h3>
+            <p class="project-summary">Event pages and registration for conferences and summits.</p>
+            <p class="project-detail">Organisers can set up different registration forms for guests, members and speakers, manage sessions and keep event details in one place.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core Razor Pages, EF Core, SQL Server, Bootstrap</p>
+            <a class="text-link" href="https://summithub.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://summithub.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the SummitHub website">
+            <img src="assets/summithub.png" width="1440" height="900" loading="lazy" alt="Screenshot of the SummitHub homepage describing event pages and registration journeys">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>The Logbook</h3>
+            <p class="project-summary">KEKS's platform for documenting and developing open youth work.</p>
+            <p class="project-detail">Youth workers record activities, conditions and outcomes. Reports help teams reflect on their results and adapt their work to young people's changing needs.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core MVC, EF Core, SQL Server, Hangfire</p>
+            <a class="text-link" href="https://thelogbook.eu/" target="_blank" rel="noopener noreferrer">Open platform <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://thelogbook.eu/" target="_blank" rel="noopener noreferrer" aria-label="Open The Logbook platform">
+            <img src="assets/thelogbook.png" width="2500" height="1404" loading="lazy" alt="A youth worker using The Logbook's charts and reporting dashboard on a laptop">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>Ticktack</h3>
+            <p class="project-summary">Time reporting and a mileage log in a mobile web app.</p>
+            <p class="project-detail">Record work hours and trips, connect them to projects, calculate mileage reimbursement and send time and travel reports.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> React, TypeScript, Express, MariaDB, PWA</p>
+            <a class="text-link" href="https://ticktack.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image project-image--portrait" href="https://ticktack.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Ticktack website">
+            <img src="assets/ticktack.png" width="460" height="900" loading="lazy" alt="Mobile screenshot of Ticktack showing its time reporting and mileage log introduction">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>Vad var det jag sa?</h3>
+            <p class="project-summary">A Swedish and English learning site about hearing.</p>
+            <p class="project-detail">Visitors can read practical guidance, try educational listening exercises and review an audiogram locally in the browser.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core Razor Pages, JavaScript, Web Audio API, PDF.js</p>
+            <a class="text-link" href="https://vadvardetjagsa.mrcheng.se/sv/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://vadvardetjagsa.mrcheng.se/sv/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Vad var det jag sa website">
+            <img src="assets/vadvardetjagsa.png" width="1440" height="900" loading="lazy" alt="Screenshot of the Vad var det jag sa homepage with hearing exercises and learning sections">
+          </a>
+        </article>
+
+        <article class="project" data-category="professional">
+          <div class="project-copy">
+            <h3>Webbstatistik</h3>
+            <p class="project-summary">Web analytics with visitor data hosted in Sweden.</p>
+            <p class="project-detail">Track visits, events and traffic sources without tracking cookies. Dashboards, a JavaScript tracker and an ASP.NET Core SDK support different kinds of sites.</p>
+            <p class="technology"><span class="project-tag">Professional</span><strong>Built with</strong> ASP.NET Core, JavaScript tracker, API, .NET SDK</p>
+            <a class="text-link" href="https://webbstatistik.se/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="project-image" href="https://webbstatistik.se/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Webbstatistik website">
+            <img src="assets/webbstatistik.png" width="1440" height="900" loading="lazy" alt="Screenshot of the Webbstatistik homepage introducing Swedish-hosted web analytics">
+          </a>
+        </article>
+
+        <details class="audio-register" id="audio-register" open>
+          <summary><span role="heading" aria-level="3">Audio projects</span><span class="audio-register-action">Project archive <span aria-hidden="true">↗</span></span></summary>
+          <div class="audio-register-content">
+            <p class="audio-intro">This is a list of audio projects I've been involved in over the years.</p>
+            <p class="audio-year-note">Years follow the project archive; some reflect the earliest backup rather than the production date.</p>
+            <nav class="audio-years" aria-label="Browse audio projects by year">
+              <a href="#audio-2026">2026</a>
+              <a href="#audio-2025">2025</a>
+              <a href="#audio-2024">2024</a>
+              <a href="#audio-2023">2023</a>
+              <a href="#audio-2021">2021</a>
+            </nav>
+            <div class="audio-groups">
+              <section class="audio-year" id="audio-2026" aria-labelledby="audio-2026-title">
+                <h4 id="audio-2026-title">2026</h4>
+                <ul class="audio-project-list">
+                  <li>Atlas Copco – ACO01</li>
+                  <li>Autoliv – AUT33</li>
+                  <li>Autoliv – HBN (AUT32)</li>
+                  <li>Autoliv – LLU</li>
+                  <li>Autoliv – September 2026</li>
+                  <li>Bilia – BIL-0006</li>
+                  <li>Bilia – TV-reklam</li>
+                  <li>Caparol – Reklamfilmer, mars 2026</li>
+                  <li>Cheffelo – Radioreklam</li>
+                  <li>Columbus</li>
+                  <li>Combitech – Brandfilm</li>
+                  <li>Di Leva</li>
+                  <li>Från Junior till Senior – Voice-over</li>
+                  <li>GKN – Dåtid &amp; Nutid</li>
+                  <li>Göteborg &amp; Co – Varumärkesfilm, tysk voice-over</li>
+                  <li>Göteborgs Stad – Mer plats för livet</li>
+                  <li>Hay Day</li>
+                  <li>Hay Day – Joe &amp; Jonas</li>
+                  <li>Horse – HRS09</li>
+                  <li>Inflatable Suit</li>
+                  <li>Jalas – Röstinspelning</li>
+                  <li>Jobbsafari – Webbfilm</li>
+                  <li>Kärcher – Voice-over</li>
+                  <li>Limbra</li>
+                  <li>LKAB</li>
+                  <li>Nintendo – Mario Medley</li>
+                  <li>Nintendo – Sports Resort 2026</li>
+                  <li>Pernilla Wahlgren Design</li>
+                  <li>Polestar</li>
+                  <li>Santa Maria – Jul</li>
+                  <li>SCA</li>
+                  <li>Scania – SCN01</li>
+                  <li>SKF – Export Control</li>
+                  <li>SKF – Marketing Update Berber</li>
+                  <li>SKF – Remanufacturing Centre Event</li>
+                  <li>SKF – SKF101</li>
+                  <li>SKF – Vanja Winblad Event</li>
+                  <li>Stadsmissionen</li>
+                  <li>Stena &amp; SKF – Voice-over med Bee</li>
+                  <li>Stenapodden</li>
+                  <li>Stryktipset – Tips-SM, radioreklam januari 2026</li>
+                  <li>Tele2 – Frank&#x27;s Childhood</li>
+                  <li>Vattenfall – Mastering</li>
+                  <li>Vattenfall – WOW</li>
+                  <li>VitaePro – VITA-0001, april 2026</li>
+                  <li>Volvo Cars – VCC-0124</li>
+                  <li>Volvo Defence</li>
+                  <li>Volvo Environment Prize</li>
+                  <li>Volvo Home Energy Solutions</li>
+                  <li>Volvo Penta – SP6596</li>
+                  <li>Volvo Trucks US – September 2026</li>
+                  <li>Volvo Trucks US – Walkarounds, september 2026</li>
+                  <li>Volvo Trucks – Benefit Films</li>
+                  <li>Volvo Trucks – Fyra filmer</li>
+                  <li>Volvo Trucks – P33XX</li>
+                  <li>Volvo – AR</li>
+                  <li>Volvo – Auto Software Update (VTUS-0097)</li>
+                  <li>Volvo – Kiruna Running Footage</li>
+                  <li>Volvo – The Shift</li>
+                  <li>Volvo – VR Motpr</li>
+                  <li>Wasa – Mastering</li>
+                  <li>Wasa – Social, onlinevideo</li>
+                </ul>
+              </section>
+              <section class="audio-year" id="audio-2025" aria-labelledby="audio-2025-title">
+                <h4 id="audio-2025-title">2025</h4>
+                <ul class="audio-project-list">
+                  <li>A Tungsten Saga</li>
+                  <li>AI-redigering av ljudfiler</li>
+                  <li>Allianz – Pet Project</li>
+                  <li>ASSA – Launch Film 2025</li>
+                  <li>AstraZeneca – Art Society</li>
+                  <li>AstraZeneca – Event december 2025</li>
+                  <li>AstraZeneca – Musikklipp</li>
+                  <li>Autoliv – AUT31</li>
+                  <li>Autoliv – Empower (AUT35)</li>
+                  <li>Baileys – Mastering</li>
+                  <li>Caparol – Voice-over 2025</li>
+                  <li>Craft – IFK 2025</li>
+                  <li>GKN – Corporate Film 2</li>
+                  <li>GKN – Group</li>
+                  <li>Guinness</li>
+                  <li>Göteborg &amp; Co – Jul 2025</li>
+                  <li>HLR-filmen</li>
+                  <li>Horse – HRS04</li>
+                  <li>Horse – Mässa (HRS02)</li>
+                  <li>Horse – Ultra Concept</li>
+                  <li>Horse – Voice-over, augusti 2025</li>
+                  <li>IAmAiken – Novels</li>
+                  <li>IFEAT – Ljudmiljöer</li>
+                  <li>Kistone – 30 år</li>
+                  <li>Ljudtest Volvo</li>
+                  <li>MOBX – Future of Mobility</li>
+                  <li>Mölnlycke – Mässintro, voice-over</li>
+                  <li>Nintendo – Mario Kart 2025, Surround</li>
+                  <li>Nintendo – Mario Kart World, maj 2025</li>
+                  <li>Nintendo – Pokémon &amp; Donkey Kong, oktober 2025</li>
+                  <li>SCA – Starter</li>
+                  <li>Sendify</li>
+                  <li>Stena Metall – Avdelningar, röstinspelning</li>
+                  <li>Stena Metall – Henrik Cehlander</li>
+                  <li>Stena Metall – Ocean</li>
+                  <li>Stena Recycling – Intro</li>
+                  <li>Stryktipset – November 2025</li>
+                  <li>Strömbrytare – Event</li>
+                  <li>Tele2 – Franks namnsdag</li>
+                  <li>Tele2 – Ljudmix</li>
+                  <li>Testtvätt</li>
+                  <li>Transdev</li>
+                  <li>Visit Sweden</li>
+                  <li>VitaePro – VITA-0008</li>
+                  <li>Volvo Cars – Winter 2025 (VCC-0121)</li>
+                  <li>Volvo Group</li>
+                  <li>Volvo Penta – Reman 2025</li>
+                  <li>Volvo Trucks – New VNR Teaser</li>
+                  <li>Volvo Trucks – VNR Launch Brand Film</li>
+                  <li>Volvo V60 – Test Drive, TV-reklam</li>
+                  <li>Volvo VNL – Commercial Spots (VTUS-0090)</li>
+                  <li>Volvo VNR – Launch: Peace of Mind</li>
+                  <li>Volvo – Active Side Collision</li>
+                  <li>Volvo – Bauma, mässfilm (VLV-0283)</li>
+                  <li>Volvo – Brand Destination</li>
+                  <li>Volvo – Buddy</li>
+                  <li>Volvo – Driving Växjö</li>
+                  <li>Volvo – Företagsfilm (VLV-0286)</li>
+                  <li>Volvo – Immersive</li>
+                  <li>Volvo – Load Finder</li>
+                  <li>Volvo – NCAP</li>
+                  <li>Volvo – VTR02</li>
+                  <li>Wasa – Knäckebröd</li>
+                  <li>Wasa – Social</li>
+                  <li>Water</li>
+                  <li>Weber – Dansk voice-over, september 2025</li>
+                  <li>Weekly Revolt – Voice-over, 20 sekunder</li>
+                </ul>
+              </section>
+              <section class="audio-year" id="audio-2024" aria-labelledby="audio-2024-title">
+                <h4 id="audio-2024-title">2024</h4>
+                <ul class="audio-project-list">
+                  <li>Annas ljudfix</li>
+                  <li>Axkid</li>
+                  <li>Bacnet</li>
+                  <li>Burger King – Bacon Cheddar (Norge)</li>
+                  <li>Burger King – Gourmet Chicken</li>
+                  <li>Burger King – Nice Prajs / Crown Deal, norsk radio</li>
+                  <li>Burger King – The Eagle</li>
+                  <li>Burger King – Triple Onion</li>
+                  <li>Caparol – Capafree Super</li>
+                  <li>Caparol – Radioreklam, mars 2024</li>
+                  <li>Caparol – Voice-over 2024</li>
+                  <li>Coop – Välkommen, sociala medier</li>
+                  <li>Electrolux – Care</li>
+                  <li>Electrolux – Juli 2024</li>
+                  <li>Electrolux – Steam Oven</li>
+                  <li>Fallbeskrivning – Liam</li>
+                  <li>Fjället</li>
+                  <li>For You – Voice-over, februari 2024</li>
+                  <li>Gekås</li>
+                  <li>Göteborg &amp; Co</li>
+                  <li>Halmstad – Platsvarumärke, voice-over</li>
+                  <li>Halmstads kommun – Våld</li>
+                  <li>Knacken</li>
+                  <li>LBS – 2024</li>
+                  <li>Liseberg – Gasten, kömeddelande</li>
+                  <li>Liseberg – Nattsvart Gasten</li>
+                  <li>Melodifestivalen – Voice-over</li>
+                  <li>MUCF</li>
+                  <li>Mölndal – Fler friska år</li>
+                  <li>Mölnlycke – Doctor Walk, dubbning</li>
+                  <li>Mölnlycke – Dressing Matters</li>
+                  <li>Mölnlycke – Empower</li>
+                  <li>Mölnlycke – Values</li>
+                  <li>NCC</li>
+                  <li>Netflix – BFF Challenge</li>
+                  <li>Närhälsan</li>
+                  <li>Omilon Translate</li>
+                  <li>Sala Silvergruva</li>
+                  <li>Sandvik – Chile Case Film</li>
+                  <li>SKF – Brush</li>
+                  <li>SKF – For Me, Update</li>
+                  <li>Stryktipset – December 2024</li>
+                  <li>Stryktipset – Juni 2024</li>
+                  <li>Svanen</li>
+                  <li>Sverigelotten – April 2024</li>
+                  <li>Sverigelotten – November</li>
+                  <li>Sverigelotten – Rosa Bandet, september 2024</li>
+                  <li>Swegon</li>
+                  <li>VitaePro – Ljudrestaurering</li>
+                  <li>VitaePro – VITA-0005</li>
+                  <li>Volvo AB – VOAB-0002</li>
+                  <li>Volvo AB – VOAB-0002 Long</li>
+                  <li>Volvo AB – VOAB-0003</li>
+                  <li>Volvo Buses – Case Pro Bono</li>
+                  <li>Volvo EX40 – Awareness, TV-reklam</li>
+                  <li>Volvo Finans – Mix</li>
+                  <li>Volvo Group – Hello Recruiter</li>
+                  <li>Volvo Trucks US – Event Voice-over</li>
+                  <li>Volvo Trucks – VTUS-0084</li>
+                  <li>Volvo Trucks – VTUS-0085</li>
+                  <li>Volvo VNL – Canadian</li>
+                  <li>Volvo XC90 – Walkaround</li>
+                  <li>Volvo – CCC</li>
+                  <li>Volvo – Designer</li>
+                  <li>Volvo – People Answer</li>
+                  <li>Volvo – Re-edit Main Film</li>
+                  <li>Volvo – VLV-0261 A19 Design</li>
+                  <li>Volvo – VLV-0261 A5 Hero</li>
+                  <li>Volvo – VLV-0261 Behind the Scenes</li>
+                  <li>Volvo – VLV-0261 Walkaround</li>
+                  <li>Volvo – VLV-0276</li>
+                  <li>Vårdförbundet – På jobbet</li>
+                  <li>World of Volvo – Invitation</li>
+                  <li>Ziklo Bank – Mix</li>
+                  <li>Ziklo – Hyllning</li>
+                </ul>
+              </section>
+              <section class="audio-year" id="audio-2023" aria-labelledby="audio-2023-title">
+                <h4 id="audio-2023-title">2023</h4>
+                <ul class="audio-project-list">
+                  <li>Burger King – Najs Prajs</li>
+                  <li>Burger King – Texas Cheese, svensk onlinevideo</li>
+                  <li>Burger King – Texas, norsk TV-reklam</li>
+                  <li>Caparol – Color Happy 2023</li>
+                  <li>Economic Stories – Voice-over med Bee</li>
+                  <li>Electrolux – Sakura</li>
+                  <li>Epic Split – Teaser</li>
+                  <li>Faktum – Podcast, juni 2023</li>
+                  <li>Fischer – Mastering</li>
+                  <li>Har du fem</li>
+                  <li>ICA – Reklamfilmer, augusti 2023</li>
+                  <li>Midsommarkonsert på Vinga</li>
+                  <li>Mölnlycke – Manifest 2023</li>
+                  <li>Mölnlycke – ORS</li>
+                  <li>Nintendo Switch – Together Family</li>
+                  <li>Nintendo – Super Mario Bros. Wonder, Characters Mix</li>
+                  <li>Polestar Precept – Episode 10</li>
+                  <li>Polestar – TV-reklam, korrigering</li>
+                  <li>Rätt Malmö – Mässa</li>
+                  <li>SKF – Aftermarket (SKF59)</li>
+                  <li>SKF – Event Intro (SKF72)</li>
+                  <li>SKF – For Me</li>
+                  <li>SKF – Husfilm</li>
+                  <li>SKF – Leadership Stories (SKF74)</li>
+                  <li>SKF – Superprecision</li>
+                  <li>SKF – Wind Intro (SKF59)</li>
+                  <li>Stena Line – The Script</li>
+                  <li>Stena Recycling – SKFS20</li>
+                  <li>Stena – Confidential</li>
+                  <li>Stryktipset – Maj 2023</li>
+                  <li>Svanen – Norsk TV-reklam</li>
+                  <li>TUI – Broaden &amp; Longhaul</li>
+                  <li>Valborgskonsert</li>
+                  <li>VitaePro – 0004</li>
+                  <li>Volvo Autonomous Solutions – Milestone</li>
+                  <li>Volvo Buses – Statement</li>
+                  <li>Volvo Finans</li>
+                  <li>Volvo – Awareness, TV-reklam</li>
+                  <li>Volvo – FL &amp; FE</li>
+                  <li>Zenseact</li>
+                  <li>Zenseact – ZOD (ZEN05)</li>
+                  <li>Zinzino</li>
+                  <li>Zinzino – Why</li>
+                  <li>Öborgen</li>
+                </ul>
+              </section>
+              <section class="audio-year" id="audio-2021" aria-labelledby="audio-2021-title">
+                <h4 id="audio-2021-title">2021</h4>
+                <ul class="audio-project-list">
+                  <li>Stryktipset – 2021</li>
+                  <li>Wortie – Instructions, juli 2021</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <h2 id="about-title">About</h2>
+        </div>
+        <p class="about-lead">I’ve designed sound for thousands of commercial and corporate productions.</p>
+        <p class="about-copy">My work spans film, games and digital campaigns. I also manage web and software projects, bringing creative and technical teams together through clear communication.</p>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <h2 id="experience-title">Experience</h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div>
+              <h3>Ljudbyrån</h3>
+              <p class="experience-role">Founder and owner · Established 2000</p>
+            </div>
+            <p>Sound design for commercial and corporate films, games and digital campaigns, including work for the automotive industry. I combine creative audio work with structured project execution.</p>
+          </article>
+          <article class="experience-item">
+            <div>
+              <h3>MRC Collective</h3>
+              <p class="experience-role">Owner</p>
+            </div>
+            <p>A development collective that grew from evening projects into workshops and coding events. We have built booking systems, games and services, including work under Chalmers Ventures. We work closely with clients, including organisations serving young people, to make software that gives staff more time for people.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer" id="contact">
+      <div class="section-heading">
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="https://www.linkedin.com/in/medindaniel/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a class="contact-link" href="https://github.com/daniel-medin/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
