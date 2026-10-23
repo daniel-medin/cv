@@ -38,6 +38,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .site-header nav { display: flex; flex-wrap: wrap; gap: clamp(16px, 3vw, 42px); }
 .site-header nav a { font-size: 14px; text-decoration: none; }
 .site-header nav a:hover, .text-link:hover, .contact-link:hover { color: var(--accent); }
+.site-header nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; text-underline-offset: 6px; }
 
 .intro { padding: clamp(60px, 7vw, 95px) 0 80px; }
 .intro h1 {
@@ -122,17 +123,20 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .audio-project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 34px; padding: 0; margin: 0; list-style: none; }
 .audio-project-list li { padding: 8px 0; border-bottom: 1px solid #e0e3e0; font-size: 15px; line-height: 1.4; overflow-wrap: anywhere; }
 
-.about { padding-bottom: 90px; }
-.about .section-heading { padding-bottom: 24px; }
-.about-lead { max-width: 850px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(28px, 4vw, 52px); line-height: 1.23; letter-spacing: -.045em; }
-.about-copy { max-width: 720px; margin: 30px 0 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.55; }
-
-.experience .section-heading { padding-bottom: 35px; }
-.experience-list { padding-bottom: 100px; }
-.experience-item { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); gap: clamp(35px, 7vw, 110px); border-top: 1px solid var(--line); padding: 30px 0 36px; }
-.experience-item h3 { margin: 0 0 9px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(30px, 3.2vw, 42px); font-weight: 400; letter-spacing: -.04em; line-height: 1.1; }
-.experience-item p { max-width: 670px; margin: 0; font-size: 16px; line-height: 1.55; }
-.experience-item .experience-role { color: var(--muted); font-size: 14px; }
+.about-page { padding-bottom: 105px; }
+.about-intro { padding: clamp(62px, 7vw, 95px) 0 80px; }
+.about-intro h1 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(78px, 11vw, 150px); font-weight: 400; letter-spacing: -.085em; line-height: .9; }
+.about-intro > p { margin: 35px 0 0; font-size: clamp(20px, 2.3vw, 28px); letter-spacing: -.025em; }
+.about-body { border-top: 1px solid var(--line); }
+.about-opening { max-width: 920px; margin: 0; padding: 48px 0 78px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(28px, 3.5vw, 46px); line-height: 1.25; letter-spacing: -.04em; }
+.about-opening a, .about-prose a:not(.text-link) { text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.about-opening a:hover, .about-prose a:hover { color: var(--accent); }
+.about-chapter { display: grid; grid-template-columns: minmax(180px, .35fr) minmax(0, .65fr); gap: clamp(30px, 6vw, 90px); border-top: 1px solid var(--line); padding: 33px 0 46px; }
+.about-chapter h2 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(34px, 3.5vw, 48px); font-weight: 400; line-height: 1.1; letter-spacing: -.045em; }
+.about-prose { max-width: 710px; }
+.about-prose p { margin: 0 0 22px; font-size: clamp(17px, 1.5vw, 19px); line-height: 1.65; }
+.about-prose p:last-child { margin-bottom: 0; }
+.about-prose .text-link { margin-top: 8px; font-size: 14px; line-height: 1.5; }
 
 .footer { padding-bottom: 70px; }
 .footer .section-heading { padding-bottom: 16px; }
@@ -161,10 +165,11 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   .audio-register summary { align-items: start; }
   .audio-register-action { padding-top: 6px; }
   .audio-project-list { grid-template-columns: 1fr; }
-  .about { padding-bottom: 75px; }
-  .experience-list { padding-bottom: 75px; }
-  .experience-item { display: block; }
-  .experience-item > p { margin-top: 23px; }
+  .about-page { padding-bottom: 75px; }
+  .about-intro { padding: 75px 0 65px; }
+  .about-opening { padding: 37px 0 58px; }
+  .about-chapter { display: block; padding: 28px 0 45px; }
+  .about-chapter h2 { margin-bottom: 25px; }
 }
 
 @media (max-width: 420px) {

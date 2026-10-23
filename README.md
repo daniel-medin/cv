@@ -1,6 +1,6 @@
 # Daniel Medin — CV
 
-A small, static portfolio and CV. The page introduces Daniel's sound design and project management experience in English and documents selected websites and software with a real screenshot or project image, a short description, and the technology used.
+A small, static portfolio and CV. The home page shows selected websites and software with real screenshots or project images, descriptions, and technology notes. A separate About page has Daniel's English biography and links to his audio and software work.
 
 ## Run locally
 
@@ -10,16 +10,21 @@ From this directory:
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open <http://127.0.0.1:4173/>. There is no build step or dependency installation.
+Open <http://127.0.0.1:4173/>. The biography is at <http://127.0.0.1:4173/about.html>. There is no build step or dependency installation.
 
 ## Structure
 
 - `index.html` — page content, project entries, and the audio project register
+- `about.html` — biography, professional background, and links back to the work filters
 - `styles.css` — layout, typography, and responsive styles
 - `work-filter.js` — the four-stop work filter; project entries and the audio register remain accessible without JavaScript
 - `favicon.svg` — DM monogram used as the browser icon
 - `assets/` — screenshots taken from live projects and project imagery from their repositories
 - `AGENTS.md` — editing guidance for future contributors and agents
+
+## Biography sources
+
+The About page combines details Daniel supplied directly with the public descriptions on [Ljudbyrån's website](https://www.ljudbyran.se/) and [MRC Collective's website](https://mrccollective.se/). The studio's site identifies Daniel as a founder, owner, sound designer, engineer, producer, and creative director, and describes its sound, voice, music, and mastering work. MRC Collective describes its origins and its booking, reporting, and youth-work products. The site avoids adding unconfirmed personal history, dates, or individual credits.
 
 ## Adding a project
 
@@ -67,7 +72,7 @@ The older-work inventory added 272 entries. Its five unheaded blocks were assign
 - [Vad var det jag sa?](https://vadvardetjagsa.mrcheng.se/sv/) — live Swedish homepage screenshot; educational features and stack checked against the MRC Collective source repository.
 - [Webbstatistik](https://webbstatistik.se/) — live homepage screenshot; features and public tracking options from the website, stack from its served assets and ASP.NET response.
 
-Daniel supplied his [LinkedIn](https://www.linkedin.com/in/medindaniel/) and [GitHub](https://github.com/daniel-medin/) profiles for the contact section. He also supplied the sound design, project management, Ljudbyrån and MRC Collective details used in the About and Experience sections. LinkedIn profile details were inaccessible during this edit, so no biography or experience was inferred from them.
+Daniel supplied his [LinkedIn](https://www.linkedin.com/in/medindaniel/) and [GitHub](https://github.com/daniel-medin/) profiles for the contact section. He also supplied the sound design, project management, Ljudbyrån and MRC Collective details used in the About page. LinkedIn profile details were inaccessible during this edit, so no biography was inferred from them.
 
 ## Content still to confirm
 
