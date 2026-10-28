@@ -39,13 +39,43 @@ Each stop has a shareable link: `#work`, `#professional`, `#hobby`, or `#audio`.
 
 ## Audio project register
 
-The Audio register contains 564 entries from Daniel's preliminary project-folder inventory, his comparison of Dropbox/Work and Documents/Work against external-drive backups, and a later inventory of older work. It is grouped from 2026 back to 2019, with entries alphabetized within each year. The source was an automatic first pass and may still contain closely related or duplicate projects. Asterisks marking backup-based years were removed; the page notes that these and some later additions are estimates, rather than verified production dates. The folder note on “Zinzino – Why” was removed, and “Sample (okänt projekt)” was omitted because it did not identify a project. No roles or outcomes were inferred.
+The Audio register contains 1,193 entries from Daniel's preliminary project-folder inventory, his comparison of Dropbox/Work and Documents/Work against external-drive backups, a later inventory of older work, and his historical work and invoice notes. It is grouped from 2026 back to 2012, with entries alphabetized within each year. The source was an automatic first pass and may still contain closely related or duplicate projects. Asterisks marking backup-based years were removed; the page notes that these and some later additions are estimates, rather than verified production dates. The folder note on “Zinzino – Why” was removed, and “Sample (okänt projekt)” was omitted because it did not identify a project. No roles or outcomes were inferred.
 
-Daniel later supplied “Autoliv” and “Stena Recycling SoMe – Sweetspot” as 2026 additions. “Tele2 – AI Sheep” was already listed under 2026 and was not added again. The new Autoliv entry retains the supplied name without assuming it is one of the more specifically named Autoliv projects.
+Daniel later supplied “Autoliv” and “Stena Recycling – Social Media” as 2026 additions. “Tele2 – AI Sheep” was already listed under 2026 and was not added again. The new Autoliv entry retains the supplied name without assuming it is one of the more specifically named Autoliv projects.
 
-Daniel asked for reasonable guesses where the new comparison lacked a firm year. The estimated placements are AEG, Polestar Episode 03, SCA Landslaget, Vattenfall CSN Flight 3, and Volvo Trucks VR in 2026; Fristads, Kavli, and Silverbullet in 2025; Burger King Böff, Chili Mayo, Gourmet Chicken campaign versions, and Gourmet Chipotle Nordic versions in 2024; and the additional ForSea campaign film and Maurten short films in 2023. The ForSea campaign film may overlap with “Utsikten” and should be checked later. Olka Express has separate 2024-version and 2025 entries. The general “Burger King – Nya reklamvarianter” note is represented by the specific campaigns listed for 2023–2024. Treat this as a working register until the names and years can be checked against the actual work.
+Daniel asked for reasonable guesses where the new comparison lacked a firm year. The estimated placements are AEG, Polestar Episode 03, SCA Landslaget, Vattenfall CSN Flight 3, and Volvo Trucks VR in 2026; Fristads, Kavli, and the Volleyball World Championship bumpers in 2025; Burger King Böff, Chili Mayo, Gourmet Chicken campaign versions, and Gourmet Chipotle Nordic versions in 2024; and the additional ForSea campaign film and Maurten short films in 2023. The ForSea campaign film may overlap with “Utsikten” and should be checked later. Olka Express has separate 2024-version and 2025 entries. The general “Burger King – Nya reklamvarianter” note is represented by the specific campaigns listed for 2023–2024. Treat this as a working register until the names and years can be checked against the actual work.
 
 The older-work inventory added 272 entries. Its five unheaded blocks were assigned to 2023, 2022, 2021, 2020, and 2019 in order, using dated project names within each block as the guide. “Gekås – Glasögonfabriken” and “Volvo – Dubai Expo” were moved to 2020 because their source notes explicitly named that year. The 48 entries with no source year were assigned estimated years from 2019–2022, except two folder aliases that were not made into separate projects: “Gothenburg Film Studios – Sleep Cycle Films” and “Matilda Hagård – Adapteo.” “Fagerhult – Voice-over” appeared in both the 2023 and 2019 blocks; it appears once, under 2019. Demo/Movies repeats were not counted again; only “BEM – Lev Hållbart” (2019) and “Caparol – MicDrop” (2021) added distinct films. “Volvo – VEP / VOAB-0001, voice-over” combines the folder entry and the matching Demo/Movies reference. Source notes such as “kontroll krävs” and “enligt mappnamn” were removed from visitor-facing titles. These editorial year assignments remain provisional.
+
+### Historical work and invoice notes
+
+Daniel supplied the 413-page `Invoice.pdf` and asked for projects from every year, adding only previously unlisted work for 2020–2026. The review added 633 project entries across 2012–2026. The PDF and its extracted billing information are not stored in this repository. Only project names were carried over; invoice recipients, contact people, addresses, prices, hours, billing references and internal project numbers were excluded from the additions. Brand names are retained where they identify the work itself.
+
+| Year | Added entries |
+| --- | ---: |
+| 2026 | 3 |
+| 2025 | 8 |
+| 2024 | 10 |
+| 2023 | 20 |
+| 2022 | 35 |
+| 2021 | 27 |
+| 2020 | 24 |
+| 2019 | 32 |
+| 2018 | 99 |
+| 2017 | 78 |
+| 2016 | 63 |
+| 2015 | 57 |
+| 2014 | 77 |
+| 2013 | 88 |
+| 2012 | 12 |
+
+New titles describe projects rather than production tasks: for example, “Skissmix Korrar POKEMON_FLASH_LIVE SE, NO, DK, FI” becomes “Nintendo – Pokémon Flash Live.” Triss was already represented in 2021; that title is now “Triss – Commercials,” with no additional row for its individual films, corrections or masters. Proper project titles remain in their original language; descriptive copy is English.
+
+Repeated workdays, revisions, masters, cutdowns and language versions were consolidated before comparing against the entire existing register, including projects already filed under estimated years. Repeated references alone were not treated as new projects. The Atlas Copco Respect and Cultural films replace the existing code-based Atlas Copco title. The Wonder Elephant and Characters mixes are represented by the existing “Nintendo – Super Mario Bros. Wonder” entry. The later Titanex work is grouped with “Nexans – Titanex” (2017), and the making-of and general/trucker films share “Volvo – Reality Roads” (2015). Generic Autoliv scooter/crash-test references were not added separately from the specifically named e-scooter crash-test project. The Polestar/Öhlins reference was not added because it may overlap with the existing Öhlins entry. Anonymous sessions, performer-only notes, code-only jobs, unconfirmed estimates and non-audio app maintenance or subtitling were omitted where they did not identify a completed audio project. Ambiguous source titles such as “Ford – Modeo,” “Volvo – Stretch Break” and “OMOIIMAX” remain uncorrected.
+
+A later privacy check removed agency and billing-person names from inherited Stena Recycling, volleyball, Cidan, Moxiam and I-tech titles. The agency-only recording note was removed, and the generic Moxiam addition was merged with its existing entry under 2019. Inherited internal project references were also removed from visitor-facing titles. Named films retain their titles; code-only labels now show the project brand. Within each year, unnamed Autoliv and Volvo AB/Trucks aliases that then became identical were merged. The long Volvo AB version remains covered by its project entry. No prices or billing information are published in the project register.
+
+Years for the additions follow dated work notes where available, then the invoice heading. Some headings were reused: for example, work dated in 2026 appears under a 2025 heading, and work dated in 2015 appears under a 2014 heading. These are work or billing years, not verified release dates. Existing backup-based and estimated placements remain provisional. No roles, individual credits or results were inferred from these notes.
 
 ## Included projects
 
