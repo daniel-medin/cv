@@ -96,6 +96,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .project-tag { display: inline-block; margin-right: 17px; color: var(--accent); font-weight: 600; }
 .technology strong { color: var(--ink); font-weight: 600; margin-right: 7px; }
 .project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.project-links .text-link { min-height: 40px; padding-bottom: 0; border-bottom: 0; text-decoration: underline; text-underline-offset: 6px; }
 /* Apple's badge requires clear space of one-quarter its 40px height. */
 .app-store-link { display: inline-block; padding: 10px; }
 .app-store-link img { display: block; width: auto; height: 40px; }
